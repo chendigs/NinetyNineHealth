@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="health.warriors.ninetyninehealth.MentalHealth"
+    android:background="@drawable/background1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mental Health Alternatives"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textSize="23.5sp"
+        android:textIsSelectable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Anxiety"
+        android:id="@+id/AnxietyButton"
+        android:background="#9633b5e5"
+        android:capitalize="none"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="24sp"
+        android:onClick="onClickAnxiety"
+        android:clickable="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Depression"
+        android:id="@+id/DepressionButton"
+        android:background="#9699cc00"
+        android:capitalize="none"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="24sp"
+        android:onClick="onClickDepression"
+        android:clickable="false"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/AnxietyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="PTSD"
+        android:id="@+id/PtsdButton"
+        android:background="#96ffbb33"
+        android:capitalize="none"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="24sp"
+        android:onClick="onClickPTSD"
+        android:clickable="false"
+        android:layout_below="@+id/DepressionButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What Are You Struggling With?"
+        android:id="@+id/mainView"
+        android:textSize="20sp"
+        android:textColorHighlight="@android:color/holo_orange_light"
+        android:textColor="@android:color/primary_text_light"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/AnxietyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
